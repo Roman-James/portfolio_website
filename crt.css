@@ -1,0 +1,84 @@
+/*  
+* Style by D3NN7
+* and Patrick Hlauke (https://codepen.io/patrickhlauke/pen/YaoBop)
+*/
+
+@font-face {
+    font-family: "PixelOperator";
+    src: url("assets/fonts/PixelOperator.ttf") format("truetype");
+  }
+  .crt {
+    animation-duration: 0.2s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  /* keep the body's white glow (this text-shadow overrides the inherited one),
+     plus a steady, faint colour fringe that only pulses in strength */
+  @keyframes textflicker {
+    from {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0.6px 0 0 rgba(234, 54, 175, 0.5), -0.6px 0 0 rgba(117, 250, 105, 0.5);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0.6px 0 0 rgba(234, 54, 175, 0.7), -0.6px 0 0 rgba(117, 250, 105, 0.7);
+    }
+  }
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  
+}
+
+@keyframes flicker {
+  0% {
+  opacity: 0.27861;
+  }
+  5% {
+  opacity: 0.34769;
+  }
+  10% {
+  opacity: 0.23604;
+  }
+  15% {
+  opacity: 0.10626;
+  }
+  20% {
+  opacity: 0.18128;
+  }
+  25% {
+  opacity: 0.10626;
+  }
+  30% {
+  opacity: 0.18128;
+  }
+  35% {
+  opacity: 0.23604;
+  }
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.05);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+
+}

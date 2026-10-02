@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="assets/js/theme-toggle.js"></script>
+<script src="assets/js/music-toggle.js"></script>
+<script src="assets/js/mouse-trail.js"></script>
+
+
+<body>
+    <div id="screen">
+        <header>
+            <div class="header-container">
+                <nav>
+                    <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+                        <img src="assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+                    </button>
+                    <a href="index.html">[ Roman-James Zeph ] </a>
+                    <a href="projects.html">Projects</a>
+                    <a href="events.html">Events</a>
+                    <a href="about.html">About</a>
+                    <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+                        <img src="assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="events-page">
+            <!-- One row per event, newest first, under its year.
+                   href         = the project page + #id of that event's section
+                   img          = small square copy (assets/images/events/), kept for reference
+                   data-large   = the whole poster: floats next to the cursor in the Compact listing,
+                                  and is the card picture in the Expanded view (assets/images/events/large/)
+                   --accent     = the colour the row and the bars glow in
+                   data-date / data-name = what the sort menu uses (see assets/js/events-filter.js) -->
+            <p class="events-intro">A list of events I did live visuals for. I’m not great at documenting my work yet, so unfortunately some events only have pictures and no videos.</p>
+
+            <div class="events-filters">
+                <nav class="filter-nav view-toggle" aria-label="View">
+                    <button class="filter-btn active" data-view="compact">Compact</button>
+                    <button class="filter-btn" data-view="expanded">Expanded</button>
+                </nav>
+                <div class="sort-controls">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect">
+                        <option value="date-new" selected>Newest first</option>
+                        <option value="date-old">Oldest first</option>
+                        <option value="name-az">Name (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <section class="event-year-group" data-year="2026">
+            <h2 class="event-year">2026</h2>
+            <div class="event-list">
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-09-11-sewer-fm" style="--accent: #8cff1a;" data-date="2026-09-11" data-name="Sewer.fm">
+                    <img src="assets/images/events/2026-09-11-sewer-fm.jpg" data-large="assets/images/events/large/2026-09-11-sewer-fm.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">11.09.26</span><span class="date-long">11 Sep 2026</span></span>
+                    <span class="event-row-name">Sewer.fm</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">De Sering West, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-09-05-cyberlesque-one-year-anniversary" style="--accent: #ff3048;" data-date="2026-09-05" data-name="Cyberlesque: one-year anniversary">
+                    <img src="assets/images/events/2026-09-05-cyberlesque-one-year-anniversary.jpg" data-large="assets/images/events/large/2026-09-05-cyberlesque-one-year-anniversary.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">05.09.26</span><span class="date-long">5 Sep 2026</span></span>
+                    <span class="event-row-name">Cyberlesque: one-year anniversary</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Teatro, Utrecht</span>
+                </a>
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-07-31-bitcrush-fanclub-presents" style="--accent: #b7a8d8;" data-date="2026-07-31" data-name="Bitcrush Fanclub presents">
+                    <img src="assets/images/events/2026-07-31-bitcrush-fanclub-presents.jpg" data-large="assets/images/events/large/2026-07-31-bitcrush-fanclub-presents.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">31.07.26</span><span class="date-long">31 Jul 2026</span></span>
+                    <span class="event-row-name">Bitcrush Fanclub presents</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Cinetol, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-06-25-holiday-island" style="--accent: #4fe3ff;" data-date="2026-06-25" data-name="Holiday Island">
+                    <img src="assets/images/events/2026-06-25-holiday-island.jpg" data-large="assets/images/events/large/2026-06-25-holiday-island.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">25.06.26</span><span class="date-long">25 Jun 2026</span></span>
+                    <span class="event-row-name">Holiday Island</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Paardcafé, Den Haag</span>
+                </a>
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-06-12-pixieclub" style="--accent: #9ff5b0;" data-date="2026-06-12" data-name="Pixieclub">
+                    <img src="assets/images/events/2026-06-12-pixieclub.jpg" data-large="assets/images/events/large/2026-06-12-pixieclub.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">12.06.26</span><span class="date-long">12 Jun 2026</span></span>
+                    <span class="event-row-name">Pixieclub</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Popradar, Den Haag</span>
+                </a>
+                <a class="event-row" href="projects/kesh/#2026-06-06-kesh-a-tunnel" style="--accent: #ff7a1a;" data-date="2026-06-06" data-name="Kesh A Tunnel">
+                    <img src="assets/images/events/2026-06-06-kesh-a-tunnel.jpg" data-large="assets/images/events/large/2026-06-06-kesh-a-tunnel.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">06.06.26</span><span class="date-long">6 Jun 2026</span></span>
+                    <span class="event-row-name">Kesh A Tunnel</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Undisclosed location, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-06-03-cultuurcentrum-datamosh" style="--accent: #e070ff;" data-date="2026-06-03" data-name="Cultuurcentrum Datamosh">
+                    <img src="assets/images/events/2026-06-03-cultuurcentrum-datamosh.jpg" data-large="assets/images/events/large/2026-06-03-cultuurcentrum-datamosh.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">03.06.26</span><span class="date-long">3 Jun 2026</span></span>
+                    <span class="event-row-name">Cultuurcentrum Datamosh</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Het Bos, Antwerp</span>
+                </a>
+                <a class="event-row" href="projects/tentacles/#2026-05-30-tentacles" style="--accent: #3ff2c8;" data-date="2026-05-30" data-name="Tentacles">
+                    <img src="assets/images/events/2026-05-30-tentacles.jpg" data-large="assets/images/events/large/2026-05-30-tentacles.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">30.05.26</span><span class="date-long">30 May 2026</span></span>
+                    <span class="event-row-name">Tentacles</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">De Helling, Utrecht</span>
+                </a>
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-04-25-simplosion" style="--accent: #5b63ff;" data-date="2026-04-25" data-name="Simplosion">
+                    <img src="assets/images/events/2026-04-25-simplosion.jpg" data-large="assets/images/events/large/2026-04-25-simplosion.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">25.04.26</span><span class="date-long">25 Apr 2026</span></span>
+                    <span class="event-row-name">Simplosion</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Musicon, Den Haag</span>
+                </a>
+                <a class="event-row" href="projects/bitcrushfanclub/#2026-03-12-internetcafe" style="--accent: #8f9bff;" data-date="2026-03-12" data-name="Internetcafé">
+                    <img src="assets/images/events/2026-03-12-internetcafe.jpg" data-large="assets/images/events/large/2026-03-12-internetcafe.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">12.03.26</span><span class="date-long">12 Mar 2026</span></span>
+                    <span class="event-row-name">Internetcafé</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">ACU, Utrecht</span>
+                </a>
+            </div>
+            </section>
+
+            <section class="event-year-group" data-year="2025">
+            <h2 class="event-year">2025</h2>
+            <div class="event-list">
+                <a class="event-row" href="projects/lionstorm/#2025-12-11-she-was-forgiven" style="--accent: #ff2a2a;" data-date="2025-12-11" data-name="She Was Forgiven">
+                    <img src="assets/images/events/2025-12-11-she-was-forgiven.jpg" data-large="assets/images/events/large/2025-12-11-she-was-forgiven.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">11.12.25</span><span class="date-long">11 Dec 2025</span></span>
+                    <span class="event-row-name">She Was Forgiven</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Muziekgebouw aan ’t IJ, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/amirthakidambi/#2025-11-08-amirtha-kidambi-hku-music-technology" style="--accent: #981bff;" data-date="2025-11-08" data-name="Amirtha Kidambi × HKU Music &amp; Technology">
+                    <img src="assets/images/events/2025-11-08-amirtha-kidambi-hku-music-technology.jpg" data-large="assets/images/events/large/2025-11-08-amirtha-kidambi-hku-music-technology.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">08.11.25</span><span class="date-long">8 Nov 2025</span></span>
+                    <span class="event-row-name">Amirtha Kidambi × HKU Music &amp; Technology</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Stadsschouwburg, Utrecht</span>
+                </a>
+                <a class="event-row" href="projects/kesh/#2025-09-19-kesh-da-last-sun" style="--accent: #ff7a1a;" data-date="2025-09-19" data-name="Kesh Da Last Sun">
+                    <img src="assets/images/events/2025-09-19-kesh-da-last-sun.jpg" data-large="assets/images/events/large/2025-09-19-kesh-da-last-sun.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">19.09.25</span><span class="date-long">19 Sep 2025</span></span>
+                    <span class="event-row-name">Kesh Da Last Sun</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Undisclosed location, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/crazyfrogparty/#2025-09-13-crazy-frog-party-4-senior-year" style="--accent: #5dff3a;" data-date="2025-09-13" data-name="Crazy Frog Party 4: Senior Year">
+                    <img src="assets/images/events/2025-09-13-crazy-frog-party-4-senior-year.jpg" data-large="assets/images/events/large/2025-09-13-crazy-frog-party-4-senior-year.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">13.09.25</span><span class="date-long">13 Sep 2025</span></span>
+                    <span class="event-row-name">Crazy Frog Party 4: Senior Year</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/kesh/#2025-08-16-kesh-da-bus" style="--accent: #ff7a1a;" data-date="2025-08-16" data-name="Kesh Da Bus">
+                    <img src="assets/images/events/2025-08-16-kesh-da-bus.jpg" data-large="assets/images/events/large/2025-08-16-kesh-da-bus.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">16.08.25</span><span class="date-long">16 Aug 2025</span></span>
+                    <span class="event-row-name">Kesh Da Bus</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Undisclosed location, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/cacherealitymining/#2025-06-26-cache-reality-mining" style="--accent: #d4d4d4;" data-date="2025-06-26" data-name="Cache: Reality Mining">
+                    <img src="assets/images/events/2025-06-26-cache-reality-mining.jpg" data-large="assets/images/events/large/2025-06-26-cache-reality-mining.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">26.06.25</span><span class="date-long">26 Jun 2025</span></span>
+                    <span class="event-row-name">Cache: Reality Mining</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Cinetol, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/cookiedoughrave/" style="--accent: #ff2fb8;" data-date="2025-05-17" data-name="CDrave">
+                    <img src="assets/images/events/2025-05-17-cdrave.jpg" data-large="assets/images/events/large/2025-05-17-cdrave.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">17.05.25</span><span class="date-long">17 May 2025</span></span>
+                    <span class="event-row-name">CDrave</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Midnight Masquerade festival, Utrecht</span>
+                </a>
+            </div>
+            </section>
+
+            <section class="event-year-group" data-year="2024">
+            <h2 class="event-year">2024</h2>
+            <div class="event-list">
+                <a class="event-row" href="projects/gluglu/#2024-12-08-glu-glu" style="--accent: #9fe8ff;" data-date="2024-12-08" data-name="Glu Glu">
+                    <img src="assets/images/events/2024-12-08-glu-glu.jpg" data-large="assets/images/events/large/2024-12-08-glu-glu.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">08.12.24</span><span class="date-long">8 Dec 2024</span></span>
+                    <span class="event-row-name">Glu Glu</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Sexyland World, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/lionstorm/#2024-12-05-she-was-forgiven" style="--accent: #ff2a2a;" data-date="2024-12-05" data-name="She Was Forgiven">
+                    <img src="assets/images/events/2024-12-05-she-was-forgiven.jpg" data-large="assets/images/events/large/2024-12-05-she-was-forgiven.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">05.12.24</span><span class="date-long">5 Dec 2024</span></span>
+                    <span class="event-row-name">She Was Forgiven</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Muziekgebouw aan ’t IJ, Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/crazyfrogparty/#2024-05-19-crazy-frog-party-3" style="--accent: #5dff3a;" data-date="2024-05-19" data-name="Crazy Frog Party 3">
+                    <img src="assets/images/events/2024-05-19-crazy-frog-party-3.jpg" data-large="assets/images/events/large/2024-05-19-crazy-frog-party-3.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">19.05.24</span><span class="date-long">19 May 2024</span></span>
+                    <span class="event-row-name">Crazy Frog Party 3</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Amsterdam</span>
+                </a>
+            </div>
+            </section>
+
+            <section class="event-year-group" data-year="2023">
+            <h2 class="event-year">2023</h2>
+            <div class="event-list">
+                <a class="event-row" href="projects/crazyfrogparty/#2023-09-09-crazy-frog-party-2" style="--accent: #5dff3a;" data-date="2023-09-09" data-name="Crazy Frog Party 2">
+                    <img src="assets/images/events/2023-09-09-crazy-frog-party-2.jpg" data-large="assets/images/events/large/2023-09-09-crazy-frog-party-2.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">09.09.23</span><span class="date-long">9 Sep 2023</span></span>
+                    <span class="event-row-name">Crazy Frog Party 2</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Amsterdam</span>
+                </a>
+                <a class="event-row" href="projects/crazyfrogparty/#2023-06-03-crazy-frog-party-1" style="--accent: #5dff3a;" data-date="2023-06-03" data-name="Crazy Frog Party 1">
+                    <img src="assets/images/events/2023-06-03-crazy-frog-party-1.jpg" data-large="assets/images/events/large/2023-06-03-crazy-frog-party-1.jpg" alt="" loading="lazy">
+                    <span class="event-row-date"><span class="date-code">03.06.23</span><span class="date-long">3 Jun 2023</span></span>
+                    <span class="event-row-name">Crazy Frog Party 1</span>
+                    <span class="event-row-dots" aria-hidden="true"></span>
+                    <span class="event-row-where">Amsterdam</span>
+                </a>
+            </div>
+            </section>
+
+            <div class="event-list event-list--flat" hidden></div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2026 Roman-James Zeph</p>
+            </div>
+        </footer>
+    </div>
+<script src="assets/js/events-filter.js"></script>
+<script src="assets/js/bar-color.js"></script>
+</body>
+</html>

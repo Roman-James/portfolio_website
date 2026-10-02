@@ -1,0 +1,5 @@
+# source files (zips, raw videos, PSDs) - far too big for GitHub, and the site doesn't use them
+_originals/
+
+# macOS
+.DS_Store

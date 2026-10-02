@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Glu Glu — Roman-James Zeph</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<script src="../../assets/js/theme-toggle.js"></script>
+<script src="../../assets/js/music-toggle.js"></script>
+<script src="../../assets/js/mouse-trail.js"></script>
+
+<!-- --accent is this project's colour: bars, mouse trail, headings, glows, frames and the photo viewer -->
+<body class="project" style="--accent: #9fe8ff;">
+  <div id="screen">
+    <header>
+      <div class="header-container">
+        <nav>
+          <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+            <img src="../../assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+          </button>
+          <a href="../../index.html">[ Roman-James Zeph ] </a>
+          <a href="../../projects.html">Projects</a>
+          <a href="../../events.html">Events</a>
+          <a href="../../about.html">About</a>
+          <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+            <img src="../../assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Adding media: put the file in this project's folder, then copy a line like these and change the path:
+           <figure class="media-frame"><img class="gallery-img" src="images/photo.jpg" alt="Short description" loading="lazy"><figcaption>Caption</figcaption></figure>
+           <figure class="media-frame"><video controls playsinline preload="metadata" src="video/clip.mp4#t=0.1"></video></figure>
+         Photos for an event go in the media-grid next to its poster (add one if the event has none yet).
+         Paths with spaces need %20 (e.g. 2025-08-16%20kesh%20da%20bus/photo.jpg). -->
+    <main class="project-page">
+      <h1>Glu Glu</h1>
+      <div class="project-meta">
+        <div class="meta-item"><strong>YEAR:</strong> 2024</div>
+        <div class="meta-item"><strong>ROLE:</strong> Live visuals</div>
+      </div>
+      <div class="project-intro">
+        <div class="project-description">
+          <p>A wintercore club night at <a href="https://www.instagram.com/sexyland_world/" target="_blank" rel="noopener">Sexyland World</a> in Amsterdam: digital dance music for cold days, from hyperpop and eurodance to breakcore, Jersey club and happy hardcore.</p>
+        </div>
+      </div>
+
+      <h2 class="event-year">2024</h2>
+
+      <section id="2024-12-08-glu-glu" class="event-section">
+        <figure class="media-frame"><img class="gallery-img" src="images/poster.jpg" alt="Glu Glu poster" loading="lazy" data-caption="Glu Glu · 8 December 2024 · Sexyland World, Amsterdam"></figure>
+        <div>
+          <h2>Glu Glu</h2>
+          <p class="event-meta">8 December 2024 · Sexyland World, Amsterdam</p>
+          <p class="section-text">I did the live visuals (as Nomie) for a line-up of Jelee, L!nn, stnvndijk*, DJ Mango Ice and romeo0romeo.</p>
+          <div class="media-grid">
+            <figure class="media-frame"><img class="gallery-img" src="images/01.jpg" alt="Glu Glu at Sexyland World" loading="lazy" data-caption="Glu Glu · 8 December 2024 · Sexyland World, Amsterdam"></figure>
+            <figure class="media-frame"><img class="gallery-img" src="images/02.jpg" alt="Glu Glu at Sexyland World" loading="lazy" data-caption="Glu Glu · 8 December 2024 · Sexyland World, Amsterdam"></figure>
+            <figure class="media-frame"><img class="gallery-img" src="images/03.jpg" alt="Glu Glu at Sexyland World" loading="lazy" data-caption="Glu Glu · 8 December 2024 · Sexyland World, Amsterdam"></figure>
+            <figure class="media-frame"><img class="gallery-img" src="images/04.jpg" alt="Glu Glu at Sexyland World" loading="lazy" data-caption="Glu Glu · 8 December 2024 · Sexyland World, Amsterdam"></figure>
+            <figure class="media-frame"><img class="gallery-img" src="images/05.jpg" alt="Glu Glu at Sexyland World" loading="lazy" data-caption="Glu Glu · 8 December 2024 · Sexyland World, Amsterdam"></figure>
+            <figure class="media-frame"><img class="gallery-img" src="images/06.jpg" alt="Glu Glu at Sexyland World" loading="lazy" data-caption="Glu Glu · 8 December 2024 · Sexyland World, Amsterdam"></figure>
+          </div>
+        </div>
+      </section>
+
+      <p class="back-link"><a href="../../projects.html">&larr; Back to projects</a></p>
+    </main>
+
+    <div id="galleryOverlay" class="overlay">
+      <button id="prevBtn" class="nav-arrow left-arrow" aria-label="Previous image">&#10094;</button>
+      <img class="overlay-content" id="overlayImg" src="" alt="">
+      <p class="overlay-caption" id="overlayCaption"></p>
+      <button id="nextBtn" class="nav-arrow right-arrow" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Roman-James Zeph</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../assets/js/gallery.js"></script>
+</body>
+</html>

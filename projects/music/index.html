@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Music — Roman-James Zeph</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<script src="../../assets/js/theme-toggle.js"></script>
+<script src="../../assets/js/music-toggle.js"></script>
+<script src="../../assets/js/mouse-trail.js"></script>
+
+<!-- --accent is this project's colour: bars, mouse trail, headings, glows, frames and the photo viewer -->
+<body class="project" style="--accent: #7fb8ff;">
+  <div id="screen">
+    <header>
+      <div class="header-container">
+        <nav>
+          <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+            <img src="../../assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+          </button>
+          <a href="../../index.html">[ Roman-James Zeph ] </a>
+          <a href="../../projects.html">Projects</a>
+          <a href="../../events.html">Events</a>
+          <a href="../../about.html">About</a>
+          <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+            <img src="../../assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Adding media: put the file in this project's folder, then copy a line like these and change the path:
+           <figure class="media-frame"><img class="gallery-img" src="images/photo.jpg" alt="Short description" loading="lazy"><figcaption>Caption</figcaption></figure>
+           <figure class="media-frame"><video controls playsinline preload="metadata" src="video/clip.mp4#t=0.1"></video></figure>
+         Photos for an event go in the media-grid next to its poster (add one if the event has none yet).
+         Paths with spaces need %20 (e.g. 2025-08-16%20kesh%20da%20bus/photo.jpg). -->
+    <main class="project-page">
+      <h1>My Music</h1>
+      <div class="project-meta">
+        <div class="meta-item"><strong>ROLE:</strong> Producer</div>
+        <div class="meta-item"><strong>TOOLS:</strong> Ableton</div>
+      </div>
+      <div class="project-intro has-media">
+        <figure class="media-frame"><img class="gallery-img" src="images/cover.jpg" alt="My Music" loading="lazy" data-caption="My Music"></figure>
+        <div class="project-description">
+          <p>Beats and tracks I make for fun. Nothing released yet, so this is the only place to hear them.</p>
+        </div>
+      </div>
+      <!-- Tracks: put the file in the audio folder and add one <li> line (mp3 loads much faster than wav). -->
+      <ol class="tracklist">
+        <li><span class="track-title">Animals (demo)</span><audio controls preload="none" src="audio/ANIMALS_DEMO.mp3"></audio></li>
+        <li><span class="track-title">Drumsjek</span><audio controls preload="none" src="audio/DRUMSJEK.mp3"></audio></li>
+        <li><span class="track-title">Haven</span><audio controls preload="none" src="audio/HAVEN.mp3"></audio></li>
+        <li><span class="track-title">Kopstoot</span><audio controls preload="none" src="audio/KOPSTOOT.mp3"></audio></li>
+        <li><span class="track-title">Realtime Gangster</span><audio controls preload="none" src="audio/REALTIMEGANGSTER.mp3"></audio></li>
+        <li><span class="track-title">Trollenpodcast (demo)</span><audio controls preload="none" src="audio/TROLLENPODCAST_DEMO.mp3"></audio></li>
+        <li><span class="track-title">Twist It</span><audio controls preload="none" src="audio/TWIST_IT.mp3"></audio></li>
+      </ol>
+      <p class="tracklist-empty">Tracks coming soon.</p>
+
+      <p class="back-link"><a href="../../projects.html">&larr; Back to projects</a></p>
+    </main>
+
+    <div id="galleryOverlay" class="overlay">
+      <button id="prevBtn" class="nav-arrow left-arrow" aria-label="Previous image">&#10094;</button>
+      <img class="overlay-content" id="overlayImg" src="" alt="">
+      <p class="overlay-caption" id="overlayCaption"></p>
+      <button id="nextBtn" class="nav-arrow right-arrow" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Roman-James Zeph</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../assets/js/gallery.js"></script>
+  <script>
+    // play one track at a time, and pause the site's background music while a track plays
+    document.addEventListener('play', (e) => {
+      if (!e.target.closest('.tracklist')) return;
+      document.querySelectorAll('.tracklist audio').forEach((a) => { if (a !== e.target) a.pause(); });
+      const siteMusic = document.getElementById('musicToggle');
+      if (siteMusic && siteMusic.getAttribute('aria-pressed') === 'true') siteMusic.click();
+    }, true);
+  </script>
+</body>
+</html>

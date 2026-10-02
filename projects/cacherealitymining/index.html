@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cache: Reality Mining — Roman-James Zeph</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<script src="../../assets/js/theme-toggle.js"></script>
+<script src="../../assets/js/music-toggle.js"></script>
+<script src="../../assets/js/mouse-trail.js"></script>
+
+<!-- --accent is this project's colour: bars, mouse trail, headings, glows, frames and the photo viewer -->
+<body class="project" style="--accent: #d4d4d4;">
+  <div id="screen">
+    <header>
+      <div class="header-container">
+        <nav>
+          <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+            <img src="../../assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+          </button>
+          <a href="../../index.html">[ Roman-James Zeph ] </a>
+          <a href="../../projects.html">Projects</a>
+          <a href="../../events.html">Events</a>
+          <a href="../../about.html">About</a>
+          <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+            <img src="../../assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Adding media: put the file in this project's folder, then copy a line like these and change the path:
+           <figure class="media-frame"><img class="gallery-img" src="images/photo.jpg" alt="Short description" loading="lazy"><figcaption>Caption</figcaption></figure>
+           <figure class="media-frame"><video controls playsinline preload="metadata" src="video/clip.mp4#t=0.1"></video></figure>
+         Photos for an event go in the media-grid next to its poster (add one if the event has none yet).
+         Paths with spaces need %20 (e.g. 2025-08-16%20kesh%20da%20bus/photo.jpg). -->
+    <main class="project-page">
+      <h1>Cache: Reality Mining</h1>
+      <div class="project-meta">
+        <div class="meta-item"><strong>YEAR:</strong> 2025</div>
+        <div class="meta-item"><strong>ROLE:</strong> Live visuals</div>
+      </div>
+      <div class="project-intro">
+        <div class="project-description">
+          <p>A night of local and international experimental electronic artists, somewhere between hyperpop, experimental club music and leftfield folk-pop, inspired by the esoteric internet: digicore, the 2012–2016 internet aesthetic, Frutiger Aero and digital mysticism.</p>
+        </div>
+      </div>
+
+      <h2 class="event-year">2025</h2>
+
+      <section id="2025-06-26-cache-reality-mining" class="event-section">
+        <figure class="media-frame"><img class="gallery-img" src="images/poster.jpg" alt="Cache: Reality Mining poster" loading="lazy" data-caption="Cache: Reality Mining · 26 June 2025 · Cinetol, Amsterdam"></figure>
+        <div>
+          <h2>Cache: Reality Mining</h2>
+          <p class="event-meta">26 June 2025 · Cinetol, Amsterdam</p>
+          <p class="section-text">I did the live visuals for a line-up of <a href="https://sydyap.com" target="_blank" rel="noopener">Syd Yap</a>, zegenmij@25, bols/slob, stnvndijk*, ◊◊dagerblad◊◊ and romeo0romeo b2b DJ Smob.</p>
+          <div class="media-grid">
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/video-1.mp4#t=0.1"></video></figure>
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/video-2.mp4#t=0.1"></video></figure>
+          </div>
+        </div>
+      </section>
+
+      <p class="back-link"><a href="../../projects.html">&larr; Back to projects</a></p>
+    </main>
+
+    <div id="galleryOverlay" class="overlay">
+      <button id="prevBtn" class="nav-arrow left-arrow" aria-label="Previous image">&#10094;</button>
+      <img class="overlay-content" id="overlayImg" src="" alt="">
+      <p class="overlay-caption" id="overlayCaption"></p>
+      <button id="nextBtn" class="nav-arrow right-arrow" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Roman-James Zeph</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../assets/js/gallery.js"></script>
+</body>
+</html>

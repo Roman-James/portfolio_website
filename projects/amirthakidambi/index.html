@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Amirtha Kidambi × HKU — Roman-James Zeph</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<script src="../../assets/js/theme-toggle.js"></script>
+<script src="../../assets/js/music-toggle.js"></script>
+<script src="../../assets/js/mouse-trail.js"></script>
+
+<!-- --accent is this project's colour: bars, mouse trail, headings, glows, frames and the photo viewer -->
+<body class="project" style="--accent: #981bff;">
+  <div id="screen">
+    <header>
+      <div class="header-container">
+        <nav>
+          <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+            <img src="../../assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+          </button>
+          <a href="../../index.html">[ Roman-James Zeph ] </a>
+          <a href="../../projects.html">Projects</a>
+          <a href="../../events.html">Events</a>
+          <a href="../../about.html">About</a>
+          <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+            <img src="../../assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Adding media: put the file in this project's folder, then copy a line like these and change the path:
+           <figure class="media-frame"><img class="gallery-img" src="images/photo.jpg" alt="Short description" loading="lazy"><figcaption>Caption</figcaption></figure>
+           <figure class="media-frame"><video controls playsinline preload="metadata" src="video/clip.mp4#t=0.1"></video></figure>
+         Photos for an event go in the media-grid next to its poster (add one if the event has none yet).
+         Paths with spaces need %20 (e.g. 2025-08-16%20kesh%20da%20bus/photo.jpg). -->
+    <main class="project-page">
+      <h1>Amirtha Kidambi × HKU Music &amp; Technology</h1>
+      <div class="project-meta">
+        <div class="meta-item"><strong>YEAR:</strong> 2025</div>
+        <div class="meta-item"><strong>ROLE:</strong> Live visuals</div>
+        <div class="meta-item"><strong>TECH:</strong> TouchDesigner</div>
+        <div class="meta-item"><strong>FESTIVAL:</strong> Le Guess Who?</div>
+      </div>
+      <div class="project-intro">
+        <div class="project-description">
+          <p>An experimental showcase by HKU Music &amp; Technology students for <a href="https://leguesswho.com/" target="_blank" rel="noopener">Le Guess Who?</a> 2025, made under the guidance of <a href="https://www.amirthakidambi.com/" target="_blank" rel="noopener">Amirtha Kidambi</a>.</p>
+        </div>
+      </div>
+
+      <h2 class="event-year">2025</h2>
+
+      <section id="2025-11-08-amirtha-kidambi-hku-music-technology" class="event-section">
+        <figure class="media-frame"><img class="gallery-img" src="images/thumb.jpg" alt="The showcase on stage at Stadsschouwburg Utrecht" loading="lazy" data-caption="Amirtha Kidambi × HKU Music &amp; Technology · 8 November 2025 · Stadsschouwburg, Utrecht"></figure>
+        <div>
+          <h2>Amirtha Kidambi × HKU Music &amp; Technology</h2>
+          <p class="event-meta">8 November 2025 · Stadsschouwburg, Utrecht</p>
+          <p class="section-text">The students built an improvised performance around Amirtha’s ideas on sonic liberation: how improvisation, collective creation and sonic experimentation can offer alternatives to power structures like colonialism, capitalism and patriarchy.</p>
+          <p class="section-text">I improvised all the visuals live. It was also the first time I generated all of my video content in TouchDesigner.</p>
+          <div class="media-grid">
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/part-1.mp4#t=0.1"></video><figcaption>Part 1</figcaption></figure>
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/part-2.mp4#t=0.1"></video><figcaption>Part 2</figcaption></figure>
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/part-3.mp4#t=0.1"></video><figcaption>Part 3</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <p class="back-link"><a href="../../projects.html">&larr; Back to projects</a></p>
+    </main>
+
+    <div id="galleryOverlay" class="overlay">
+      <button id="prevBtn" class="nav-arrow left-arrow" aria-label="Previous image">&#10094;</button>
+      <img class="overlay-content" id="overlayImg" src="" alt="">
+      <p class="overlay-caption" id="overlayCaption"></p>
+      <button id="nextBtn" class="nav-arrow right-arrow" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Roman-James Zeph</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../assets/js/gallery.js"></script>
+</body>
+</html>

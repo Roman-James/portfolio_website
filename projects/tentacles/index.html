@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tentacles — Roman-James Zeph</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<script src="../../assets/js/theme-toggle.js"></script>
+<script src="../../assets/js/music-toggle.js"></script>
+<script src="../../assets/js/mouse-trail.js"></script>
+
+<!-- --accent is this project's colour: bars, mouse trail, headings, glows, frames and the photo viewer -->
+<body class="project" style="--accent: #3ff2c8;">
+  <div id="screen">
+    <header>
+      <div class="header-container">
+        <nav>
+          <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+            <img src="../../assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+          </button>
+          <a href="../../index.html">[ Roman-James Zeph ] </a>
+          <a href="../../projects.html">Projects</a>
+          <a href="../../events.html">Events</a>
+          <a href="../../about.html">About</a>
+          <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+            <img src="../../assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Adding media: put the file in this project's folder, then copy a line like these and change the path:
+           <figure class="media-frame"><img class="gallery-img" src="images/photo.jpg" alt="Short description" loading="lazy"><figcaption>Caption</figcaption></figure>
+           <figure class="media-frame"><video controls playsinline preload="metadata" src="video/clip.mp4#t=0.1"></video></figure>
+         Photos for an event go in the media-grid next to its poster (add one if the event has none yet).
+         Paths with spaces need %20 (e.g. 2025-08-16%20kesh%20da%20bus/photo.jpg). -->
+    <main class="project-page">
+      <h1>Tentacles</h1>
+      <div class="project-meta">
+        <div class="meta-item"><strong>YEAR:</strong> 2026</div>
+        <div class="meta-item"><strong>ROLE:</strong> Visuals, announcement video</div>
+        <div class="meta-item"><strong>TECH:</strong> TouchDesigner</div>
+      </div>
+      <div class="project-intro">
+        <div class="project-description">
+          <p><a href="https://www.tentaclesevents.nl/" target="_blank" rel="noopener">Tentacles</a> is a multi-genre rave at <a href="https://dehelling.nl/" target="_blank" rel="noopener">De Helling</a> in Utrecht.</p>
+        </div>
+      </div>
+
+      <h2 class="event-year">2026</h2>
+
+      <section id="2026-05-30-tentacles" class="event-section">
+        <figure class="media-frame"><img class="gallery-img" src="images/poster.jpg" alt="Tentacles poster" loading="lazy" data-caption="Tentacles · 30 May 2026 · De Helling, Utrecht"></figure>
+        <div>
+          <h2>Tentacles</h2>
+          <p class="event-meta">30 May 2026 · De Helling, Utrecht</p>
+          <p class="section-text">I did the visuals for <a href="https://ivylab.bandcamp.com/" target="_blank" rel="noopener">Ivy Lab</a>’s two-hour farewell-tour set, using a butterfly simulation I built in TouchDesigner. The visuals played on a TV wall built by the Tentacles crew. I also made the announcement video for the night.</p>
+          <div class="media-grid">
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/TentaclesIvyLab.mp4#t=0.1"></video></figure>
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/TentaclesIvyLab2.mp4#t=0.1"></video></figure>
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/TentaclesIvyLab3.mp4#t=0.1"></video></figure>
+            <figure class="media-frame"><video controls playsinline preload="metadata" src="video/TentaclesAnouncement_RJ.mp4#t=0.1"></video><figcaption>Announcement video</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <p class="back-link"><a href="../../projects.html">&larr; Back to projects</a></p>
+    </main>
+
+    <div id="galleryOverlay" class="overlay">
+      <button id="prevBtn" class="nav-arrow left-arrow" aria-label="Previous image">&#10094;</button>
+      <img class="overlay-content" id="overlayImg" src="" alt="">
+      <p class="overlay-caption" id="overlayCaption"></p>
+      <button id="nextBtn" class="nav-arrow right-arrow" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Roman-James Zeph</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../assets/js/gallery.js"></script>
+</body>
+</html>

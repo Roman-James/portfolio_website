@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman-James Zeph</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<script src="assets/js/theme-toggle.js"></script>
+<script src="assets/js/music-toggle.js"></script>
+<script src="assets/js/mouse-trail.js"></script>
+<script src="assets/js/hero-tilt.js"></script>
+
+<body>
+    <div id="screen">
+        <header>
+            <div class="header-container">
+                <nav>
+                    <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+                        <img src="assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+                    </button>
+                    <a href="index.html">[ Roman-James Zeph ] </a>
+                    <a href="projects.html">Projects</a>
+                    <a href="events.html">Events</a>
+                    <a href="about.html">About</a>
+                    <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+                        <img src="assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <p class="intro">Audiovisual designer with a passion for connecting sound and video, focused on creating total experiences built around an overarching concept.</p>
+            <a class="read-more" href="about.html">Read more &rarr;</a>
+            <div class="hero-stage">
+                <!-- Centre picture: tilts to look at the mouse anywhere on the page
+                     (driven by assets/js/hero-tilt.js). -->
+                <div class="hero">
+                    <div class="hero-card">
+                        <img src="assets/images/img0025-01-01.jpeg"
+                             alt="description"
+                             height="480"
+                             width="480">
+                    </div>
+                </div>
+
+                <!-- Keyword web around the picture: three hubs (Visuals, Music, System Design)
+                     with their words; words shared between hubs sit in the gaps between them.
+                       --ax / --ay = anchor on the picture: -1 = left/top edge, 0 = centre, 1 = right/bottom edge
+                       --x / --y   = offset from that anchor (scales with the window)
+                       --o = opacity (dimmer reads as further away), --dur / --delay = float timing
+                       data-g      = which hub(s) the word belongs to: v = Visuals, m = Music, s = System Design
+                                     (hovering a hub lights up every word carrying its letter)
+                     class="keyword keyword--hub" makes a word one of the big hub words. -->
+                <div class="web">
+                    <span class="keyword keyword--hub" data-g="v" style="--ax: -1; --ay: -0.5; --x: -9; --y: 0; --dur: 5s; --delay: -0.0s;">Visuals</span>
+                    <span class="keyword" data-g="v" style="--ax: -1; --ay: -0.5; --x: -9; --y: -4.5; --o: 0.7; --dur: 4.2s; --delay: -1.3s;">generative</span>
+                    <span class="keyword" data-g="v" style="--ax: -1; --ay: -0.5; --x: -2.8; --y: -4; --o: 0.8; --dur: 5.8s; --delay: -2.6s;">analog</span>
+                    <span class="keyword" data-g="v" style="--ax: -1; --ay: -0.5; --x: -2.5; --y: 0; --o: 0.9; --dur: 4.7s; --delay: -3.9s;">VJ</span>
+                    <span class="keyword" data-g="v" style="--ax: -1; --ay: -0.5; --x: -18; --y: 0; --o: 0.7; --dur: 6.3s; --delay: -0.2s;">projection mapping</span>
+                    <span class="keyword" data-g="v" style="--ax: -1; --ay: -0.5; --x: -2.8; --y: 3.3; --o: 0.8; --dur: 5.2s; --delay: -1.5s;">realtime</span>
+                    <span class="keyword" data-g="v" style="--ax: -1; --ay: -0.5; --x: -8; --y: 3.8; --o: 0.6; --dur: 5s; --delay: -2.8s;">resolume</span>
+                    <span class="keyword" data-g="v s" style="--ax: -1; --ay: 0.45; --x: -6; --y: 0; --o: 0.8; --dur: 4.2s; --delay: -4.1s;">touchdesigner</span>
+                    <span class="keyword" data-g="v m" style="--ax: 0; --ay: -1; --x: -8; --y: -2.4; --o: 0.8; --dur: 5.8s; --delay: -0.4s;">glitches</span>
+                    <span class="keyword" data-g="v m" style="--ax: 0; --ay: -1; --x: 0; --y: -2.4; --o: 0.9; --dur: 4.7s; --delay: -1.7s;">performance</span>
+                    <span class="keyword" data-g="v m" style="--ax: 0; --ay: -1; --x: 7; --y: -2.4; --o: 0.8; --dur: 6.3s; --delay: -3.0s;">live</span>
+                    <span class="keyword keyword--hub" data-g="m" style="--ax: 1; --ay: -0.5; --x: 9; --y: 0; --dur: 5.2s; --delay: -4.3s;">Music</span>
+                    <span class="keyword" data-g="m" style="--ax: 1; --ay: -0.5; --x: 8.5; --y: -4.3; --o: 0.8; --dur: 5s; --delay: -0.6s;">production</span>
+                    <span class="keyword" data-g="m" style="--ax: 1; --ay: -0.5; --x: 17; --y: 0.5; --o: 0.7; --dur: 4.2s; --delay: -1.9s;">ableton</span>
+                    <span class="keyword" data-g="v m s" style="--ax: 0; --ay: 1; --x: -4.5; --y: 2.3; --o: 0.9; --dur: 5.8s; --delay: -3.2s;">experimental</span>
+                    <span class="keyword" data-g="v m s" style="--ax: 0; --ay: 1; --x: 4.5; --y: 2.3; --o: 0.9; --dur: 4.7s; --delay: -4.5s;">immersive</span>
+                    <span class="keyword" data-g="s" style="--ax: 0; --ay: 1; --x: -7; --y: 5; --o: 0.8; --dur: 6.3s; --delay: -0.8s;">Interactive</span>
+                    <span class="keyword" data-g="s" style="--ax: 0; --ay: 1; --x: 5; --y: 4.6; --o: 0.8; --dur: 5.2s; --delay: -2.1s;">Installation</span>
+                    <span class="keyword keyword--hub" data-g="s" style="--ax: 0; --ay: 1; --x: 0; --y: 7.6; --dur: 5s; --delay: -3.4s;">System Design</span>
+                    <span class="keyword" data-g="s" style="--ax: 0; --ay: 1; --x: 0; --y: 10.2; --o: 0.7; --dur: 4.2s; --delay: -4.7s;">data</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2026 Roman-James Zeph</p>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+

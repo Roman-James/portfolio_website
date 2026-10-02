@@ -1,0 +1,42 @@
+body {
+    font-family: PixelOperator;
+    background-image:url('assets/images/page_background_animated_04.gif');
+    /* background-color: #f4f4f4; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-image:url('assets/images/b6.gif');
+    /* background-color: #333; */
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display:inline-block; /* this allows us to add margin to each item 
+    so there's space for it to rotate */
+}
+
+nav a:hover {
+    transform:rotate(-15deg);
+}
+
+main {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+@font-face {
+    font-family: "PixelOperator"; 
+    src: url("assets/fonts/PixelOperator.ttf") format("truetype");
+}

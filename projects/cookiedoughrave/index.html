@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CDrave — Roman-James Zeph</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<script src="../../assets/js/theme-toggle.js"></script>
+<script src="../../assets/js/music-toggle.js"></script>
+<script src="../../assets/js/mouse-trail.js"></script>
+
+<!-- --accent is this project's colour: bars, mouse trail, headings, glows, frames and the photo viewer -->
+<body class="project" style="--accent: #ff2fb8;">
+  <div id="screen">
+    <header>
+      <div class="header-container">
+        <nav>
+          <button id="musicToggle" class="btn--image" aria-pressed="false" title="Toggle music">
+            <img src="../../assets/images/speaker.gif" alt="Toggle music" class="music-icon">
+          </button>
+          <a href="../../index.html">[ Roman-James Zeph ] </a>
+          <a href="../../projects.html">Projects</a>
+          <a href="../../events.html">Events</a>
+          <a href="../../about.html">About</a>
+          <button id="themeToggle" class="btn--image" aria-pressed="false" title="Toggle light mode">
+            <img src="../../assets/images/tv1.gif" alt="Toggle light mode" class="theme-icon">
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Adding media: put the file in this project's folder, then copy a line like these and change the path:
+           <figure class="media-frame"><img class="gallery-img" src="images/photo.jpg" alt="Short description" loading="lazy"><figcaption>Caption</figcaption></figure>
+           <figure class="media-frame"><video controls playsinline preload="metadata" src="video/clip.mp4#t=0.1"></video></figure>
+         Photos for an event go in the media-grid next to its poster (add one if the event has none yet).
+         Paths with spaces need %20 (e.g. 2025-08-16%20kesh%20da%20bus/photo.jpg). -->
+    <main class="project-page">
+      <h1>CDrave</h1>
+      <div class="project-meta">
+        <div class="meta-item"><strong>YEAR:</strong> 2025</div>
+        <div class="meta-item"><strong>ROLE:</strong> Co-creator, visuals</div>
+        <div class="meta-item"><strong>WITH:</strong> Syd Yap, Maan Limburg</div>
+        <div class="meta-item"><strong>TECH:</strong> TouchDesigner, 3 beamers</div>
+      </div>
+      <div class="project-intro has-media">
+        <figure class="media-frame media-frame--embed"><iframe src="https://www.youtube.com/embed/U5k8SvHoO5Q" title="CDrave video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></figure>
+        <div class="project-description">
+          <p>CDrave was a one-night rave at Midnight Masquerade festival in Utrecht on 17 May 2025, made together with <a href="https://sydyap.com" target="_blank" rel="noopener">Syd Yap</a> and <a href="https://www.maanlimburg.com" target="_blank" rel="noopener">Maan Limburg</a>.</p>
+          <p>The idea: what people post online feels harmless on a phone, but put it on a big screen in a room full of strangers and it suddenly gets awkward. We wanted to play with that feeling, and with how anonymous the internet only pretends to be.</p>
+          <p>I made the visuals: a TouchDesigner patch that generated live visuals from the visitors’ own social media content, running three beamers from one laptop. At the door everyone signed a privacy statement nobody actually read. Together with the music, props and costumes it turned into a rave that was fun and a bit uncomfortable at the same time (see the video).</p>
+          <p>We’d love to bring it to school parties, or anywhere else people could use a bit more online awareness.</p>
+          <p>Art direction: <a href="https://www.maanlimburg.com" target="_blank" rel="noopener">Maan Limburg</a><br>
+            Music: <a href="https://sydyap.com" target="_blank" rel="noopener">Syd Yap</a><br>
+            Visuals / VJ: Roman-James Zeph<br>
+            Photography: Marie van der Linden<br>
+            Video: Kooki Vaessen<br>
+            Costumes: <a href="https://www.instagram.com/poeka_witts/" target="_blank" rel="noopener">Poeka Witts</a></p>
+        </div>
+      </div>
+      <div class="media-grid">
+        <figure class="media-frame"><img class="gallery-img" src="images/1.jpg" alt="CDrave" loading="lazy" data-caption="CDrave · photo: Marie van der Linden"></figure>
+        <figure class="media-frame"><img class="gallery-img" src="images/2.jpg" alt="CDrave" loading="lazy" data-caption="CDrave · photo: Marie van der Linden"></figure>
+        <figure class="media-frame"><img class="gallery-img" src="images/3.jpg" alt="CDrave" loading="lazy" data-caption="CDrave · photo: Marie van der Linden"></figure>
+        <figure class="media-frame"><img class="gallery-img" src="images/4.jpg" alt="CDrave" loading="lazy" data-caption="CDrave · photo: Marie van der Linden"></figure>
+      </div>
+
+      <p class="back-link"><a href="../../projects.html">&larr; Back to projects</a></p>
+    </main>
+
+    <div id="galleryOverlay" class="overlay">
+      <button id="prevBtn" class="nav-arrow left-arrow" aria-label="Previous image">&#10094;</button>
+      <img class="overlay-content" id="overlayImg" src="" alt="">
+      <p class="overlay-caption" id="overlayCaption"></p>
+      <button id="nextBtn" class="nav-arrow right-arrow" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Roman-James Zeph</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../../assets/js/gallery.js"></script>
+</body>
+</html>
