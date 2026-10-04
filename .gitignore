@@ -3,3 +3,6 @@ _originals/
 
 # macOS
 .DS_Store
+
+# video masters (ProRes etc.) - the site uses compressed .mp4 copies
+*.mov

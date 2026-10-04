@@ -353,37 +353,6 @@ img {
     display: block;
 }
 
-#musicToggle {
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    z-index: 99999;
-    background: transparent;
-    color: inherit;
-    border: none;
-    cursor: pointer;
-    text-shadow: none;
-    padding: 0;
-}
-
-
-#musicToggle.btn--image { 
-    padding: 0; 
-    width: 48px; 
-    height: 48px; 
-    overflow: hidden; 
-    border: none;
-    background: transparent; 
-}
-
-#musicToggle .music-icon { 
-    width: 48px; 
-    height: 48px;
-    display: block; 
-    transition: filter 160ms ease, box-shadow 160ms ease, transform 160ms ease;
-    filter: invert(1);
-}
-
 /* Hover glow for non-pressed image buttons (no color inversion) */
 .btn--image:not([aria-pressed="true"]):hover img,
 .btn--image:not([aria-pressed="true"]):active img {
@@ -395,13 +364,6 @@ img {
 #themeToggle[aria-pressed="true"] .theme-icon {
     /* Theme: normal -> invert when light mode is ON */
     filter: invert(1) brightness(1.05);
-    box-shadow: 0 0 8px 2px rgba(255,255,255,0.9);
-    transform: scale(1.02);
-}
-
-#musicToggle[aria-pressed="true"] .music-icon {
-    /* Music: inverted (black) by default -> normal when ON */
-    filter: none;
     box-shadow: 0 0 8px 2px rgba(255,255,255,0.9);
     transform: scale(1.02);
 }
@@ -1338,7 +1300,6 @@ html.light .project-tile:hover {
 /* image buttons: black glow instead of white */
 html.light .btn--image:not([aria-pressed="true"]):hover img,
 html.light .btn--image:not([aria-pressed="true"]):active img,
-html.light #musicToggle[aria-pressed="true"] .music-icon,
 html.light #themeToggle[aria-pressed="true"] .theme-icon {
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.6);
 }
