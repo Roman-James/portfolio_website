@@ -1178,17 +1178,6 @@ html.light .media-frame {
 }
 
 /* ---------- Projects page ---------- */
-.tile-tag {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 2px 8px;
-    font-size: 0.9rem;
-    background: rgba(0, 0, 0, 0.75);
-    border: 1px solid var(--accent, white);
-    color: white;
-}
-
 /* wide grid: as many tiles per row as fit, up to a 1600px page */
 .projects-grid,
 .controls-container {

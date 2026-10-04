@@ -40,9 +40,8 @@
                         <button class="filter-btn" data-filter="installation">Installation</button>
                         <button class="filter-btn" data-filter="organising">Organising</button>
                         <button class="filter-btn" data-filter="album-visuals">Album visuals</button>
-                        <button class="filter-btn" data-filter="show-production">Show production</button>
                         <button class="filter-btn" data-filter="technical-support">Technical support</button>
-                        <button class="filter-btn" data-filter="producer">Producer</button>
+                        <button class="filter-btn" data-filter="music-production">Music production</button>
                     </nav>
 
                     <div class="sort-controls">
@@ -57,14 +56,12 @@
 
             <!-- One tile per project.
                    data-tags     = the role tags on the project page (live-visuals installation organising album-visuals
-                                   show-production technical-support producer); the filter buttons above use them
+                                   technical-support music-production); the filter buttons above use them
                    data-date     = used by "sort by date" (YYYY or YYYY-MM-DD)
-                   <img src="…"> is the tile picture (leave it out and the tile just shows its title)
-                   <span class="tile-tag"> adds a small label in the corner, e.g. for support roles -->
+                   <img src="…"> is the tile picture (leave it out and the tile just shows its title) -->
             <div class="projects-grid" id="projectsGrid" aria-label="Projects">
                 <a class="project-tile" href="projects/tomkoenrades/" data-tags="album-visuals" style="--accent: #9dff6a;" data-date="2026-09-29" data-name="Tom Koenrades">
                     <img src="projects/tomkoenrades/images/cover.jpg" loading="lazy" alt="Tom Koenrades">
-                    <span class="tile-tag">in progress</span>
                     <div class="tile-title">Tom Koenrades</div>
                 </a>
                 <a class="project-tile" href="projects/kesh/" data-tags="live-visuals" style="--accent: #ff7a1a;" data-date="2026-06-06" data-name="Kesh">
@@ -81,14 +78,13 @@
                 </a>
                 <a class="project-tile" href="projects/awomanisnotborn/" data-tags="technical-support installation" style="--accent: #ff4fd8;" data-date="2026-01-01" data-name="JONG-SLANK-WIT">
                     <img src="projects/awomanisnotborn/images/title-thumb.jpg" loading="lazy" alt="">
-                    <span class="tile-tag">tech support</span>
                     <div class="tile-title">JONG-SLANK-WIT</div>
                 </a>
-                <a class="project-tile" href="projects/music/" data-tags="producer" style="--accent: #7fb8ff;" data-date="2026-01-01" data-name="My Music">
+                <a class="project-tile" href="projects/music/" data-tags="music-production" style="--accent: #7fb8ff;" data-date="2026-01-01" data-name="My Music">
                     <img src="projects/music/images/cover.jpg" loading="lazy" alt="">
                     <div class="tile-title">My Music</div>
                 </a>
-                <a class="project-tile" href="projects/lionstorm/" data-tags="live-visuals show-production" style="--accent: #ff2a2a;" data-date="2025-12-11" data-name="Lionstorm">
+                <a class="project-tile" href="projects/lionstorm/" data-tags="live-visuals" style="--accent: #ff2a2a;" data-date="2025-12-11" data-name="Lionstorm">
                     <img src="projects/lionstorm/images/lionstorm.jpg" loading="lazy" alt="Lionstorm">
                     <div class="tile-title">Lionstorm</div>
                 </a>
