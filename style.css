@@ -35,6 +35,15 @@ body {
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
     cursor: url("assets/kleurtjes.ani"), auto;
 }
+
+/* PixelOperator has no bold, so browsers fake one for headings. Safari fakes it much
+   heavier than Chrome/Brave, which makes the glows look far stronger there, so Safari
+   (the only engine that knows the -apple-system-body font) skips the fake bold. */
+@supports (font: -apple-system-body) {
+    body {
+        font-synthesis: none;
+    }
+}
 header {
     color: white;
     background-image: url('assets/images/blkmysticbg.gif');
