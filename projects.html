@@ -34,6 +34,17 @@
             <p>Click a tile to view project details.</p> -->
 
             <div class="controls-container">
+                    <nav class="filter-nav" aria-label="Filter by role">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="live-visuals">Live visuals</button>
+                        <button class="filter-btn" data-filter="installation">Installation</button>
+                        <button class="filter-btn" data-filter="organising">Organising</button>
+                        <button class="filter-btn" data-filter="album-visuals">Album visuals</button>
+                        <button class="filter-btn" data-filter="show-production">Show production</button>
+                        <button class="filter-btn" data-filter="technical-support">Technical support</button>
+                        <button class="filter-btn" data-filter="producer">Producer</button>
+                    </nav>
+
                     <div class="sort-controls">
                         <label for="sortSelect">Sort by:</label>
                         <select id="sortSelect">
@@ -45,57 +56,59 @@
                 </div>
 
             <!-- One tile per project.
+                   data-tags     = the role tags on the project page (live-visuals installation organising album-visuals
+                                   show-production technical-support producer); the filter buttons above use them
                    data-date     = used by "sort by date" (YYYY or YYYY-MM-DD)
                    <img src="…"> is the tile picture (leave it out and the tile just shows its title)
                    <span class="tile-tag"> adds a small label in the corner, e.g. for support roles -->
             <div class="projects-grid" id="projectsGrid" aria-label="Projects">
-                <a class="project-tile" href="projects/tomkoenrades/" style="--accent: #9dff6a;" data-date="2026-09-29" data-name="Tom Koenrades">
+                <a class="project-tile" href="projects/tomkoenrades/" data-tags="album-visuals" style="--accent: #9dff6a;" data-date="2026-09-29" data-name="Tom Koenrades">
                     <img src="projects/tomkoenrades/images/cover.jpg" loading="lazy" alt="Tom Koenrades">
                     <span class="tile-tag">in progress</span>
                     <div class="tile-title">Tom Koenrades</div>
                 </a>
-                <a class="project-tile" href="projects/kesh/" style="--accent: #ff7a1a;" data-date="2026-06-06" data-name="Kesh">
+                <a class="project-tile" href="projects/kesh/" data-tags="live-visuals" style="--accent: #ff7a1a;" data-date="2026-06-06" data-name="Kesh">
                     <img src="projects/kesh/images/cover.jpg" loading="lazy" alt="Kesh">
                     <div class="tile-title">Kesh</div>
                 </a>
-                <a class="project-tile" href="projects/tentacles/" style="--accent: #3ff2c8;" data-date="2026-05-30" data-name="Tentacles">
+                <a class="project-tile" href="projects/tentacles/" data-tags="live-visuals" style="--accent: #3ff2c8;" data-date="2026-05-30" data-name="Tentacles">
                     <img src="projects/tentacles/images/thumb.jpg" loading="lazy" alt="Tentacles">
                     <div class="tile-title">Tentacles</div>
                 </a>
-                <a class="project-tile" href="projects/bitcrushfanclub/" style="--accent: #c792ff;" data-date="2026-01-01" data-name="Bitcrush Fanclub">
+                <a class="project-tile" href="projects/bitcrushfanclub/" data-tags="live-visuals organising" style="--accent: #c792ff;" data-date="2026-01-01" data-name="Bitcrush Fanclub">
                     <img src="projects/bitcrushfanclub/images/cover.jpg" loading="lazy" alt="Bitcrush Fanclub">
                     <div class="tile-title">Bitcrush Fanclub</div>
                 </a>
-                <a class="project-tile" href="projects/awomanisnotborn/" style="--accent: #ff4fd8;" data-date="2026-01-01" data-name="JONG-SLANK-WIT">
+                <a class="project-tile" href="projects/awomanisnotborn/" data-tags="technical-support installation" style="--accent: #ff4fd8;" data-date="2026-01-01" data-name="JONG-SLANK-WIT">
                     <img src="projects/awomanisnotborn/images/title-thumb.jpg" loading="lazy" alt="">
                     <span class="tile-tag">tech support</span>
                     <div class="tile-title">JONG-SLANK-WIT</div>
                 </a>
-                <a class="project-tile" href="projects/music/" style="--accent: #7fb8ff;" data-date="2026-01-01" data-name="My Music">
+                <a class="project-tile" href="projects/music/" data-tags="producer" style="--accent: #7fb8ff;" data-date="2026-01-01" data-name="My Music">
                     <img src="projects/music/images/cover.jpg" loading="lazy" alt="">
                     <div class="tile-title">My Music</div>
                 </a>
-                <a class="project-tile" href="projects/lionstorm/" style="--accent: #ff2a2a;" data-date="2025-12-11" data-name="Lionstorm">
+                <a class="project-tile" href="projects/lionstorm/" data-tags="live-visuals show-production" style="--accent: #ff2a2a;" data-date="2025-12-11" data-name="Lionstorm">
                     <img src="projects/lionstorm/images/lionstorm.jpg" loading="lazy" alt="Lionstorm">
                     <div class="tile-title">Lionstorm</div>
                 </a>
-                <a class="project-tile" href="projects/amirthakidambi/" style="--accent: #981bff;" data-date="2025-11-08" data-name="Amirtha Kidambi × HKU">
+                <a class="project-tile" href="projects/amirthakidambi/" data-tags="live-visuals" style="--accent: #981bff;" data-date="2025-11-08" data-name="Amirtha Kidambi × HKU">
                     <img src="projects/amirthakidambi/images/thumb.jpg" loading="lazy" alt="Amirtha Kidambi × HKU">
                     <div class="tile-title">Amirtha Kidambi × HKU</div>
                 </a>
-                <a class="project-tile" href="projects/cacherealitymining/" style="--accent: #d4d4d4;" data-date="2025-06-26" data-name="Cache: Reality Mining">
+                <a class="project-tile" href="projects/cacherealitymining/" data-tags="live-visuals" style="--accent: #d4d4d4;" data-date="2025-06-26" data-name="Cache: Reality Mining">
                     <img src="projects/cacherealitymining/images/cover.jpg" loading="lazy" alt="Cache: Reality Mining">
                     <div class="tile-title">Cache: Reality Mining</div>
                 </a>
-                <a class="project-tile" href="projects/cookiedoughrave/" style="--accent: #ff2fb8;" data-date="2025-05-17" data-name="CDrave">
+                <a class="project-tile" href="projects/cookiedoughrave/" data-tags="live-visuals installation" style="--accent: #ff2fb8;" data-date="2025-05-17" data-name="CDrave">
                     <img src="projects/cookiedoughrave/images/cover.jpg" loading="lazy" alt="CDrave">
                     <div class="tile-title">CDrave</div>
                 </a>
-                <a class="project-tile" href="projects/crazyfrogparty/" style="--accent: #5dff3a;" data-date="2025-09-13" data-name="Crazy Frog Party">
+                <a class="project-tile" href="projects/crazyfrogparty/" data-tags="organising live-visuals" style="--accent: #5dff3a;" data-date="2025-09-13" data-name="Crazy Frog Party">
                     <img src="projects/crazyfrogparty/images/cover.jpg" loading="lazy" alt="Crazy Frog Party">
                     <div class="tile-title">Crazy Frog Party</div>
                 </a>
-                <a class="project-tile" href="projects/gluglu/" style="--accent: #9fe8ff;" data-date="2024-12-08" data-name="Glu Glu">
+                <a class="project-tile" href="projects/gluglu/" data-tags="live-visuals" style="--accent: #9fe8ff;" data-date="2024-12-08" data-name="Glu Glu">
                     <img src="projects/gluglu/images/poster.jpg" loading="lazy" alt="Glu Glu">
                     <div class="tile-title">Glu Glu</div>
                 </a>
