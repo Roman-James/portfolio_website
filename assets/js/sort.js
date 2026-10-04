@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('projectsGrid');
-    const filterButtons = document.querySelectorAll('.filter-btn');
     const sortSelect = document.getElementById('sortSelect');
     const tiles = Array.from(grid.querySelectorAll('.project-tile'));
 
@@ -29,20 +28,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Re-run sort whenever dropdown changes
     sortSelect.addEventListener('change', sortProjects);
-
-    // --- FILTER FUNCTION ---
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            const filterValue = button.getAttribute('data-filter');
-
-            tiles.forEach(tile => {
-                // a project can sit in several hubs: data-category="visuals system"
-                const categories = (tile.getAttribute('data-category') || '').split(' ');
-                tile.style.display = (filterValue === 'all' || categories.includes(filterValue)) ? 'block' : 'none';
-            });
-        });
-    });
 });
